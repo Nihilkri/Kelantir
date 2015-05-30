@@ -28,16 +28,21 @@
 			// 
 			// tree
 			// 
+			this.tree.BackColor = System.Drawing.Color.Black;
+			this.tree.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tree.ForeColor = System.Drawing.Color.White;
 			this.tree.Location = new System.Drawing.Point(12, 12);
 			this.tree.Name = "tree";
-			this.tree.Size = new System.Drawing.Size(560, 938);
+			this.tree.ShowNodeToolTips = true;
+			this.tree.Size = new System.Drawing.Size(960, 938);
 			this.tree.TabIndex = 0;
+			this.tree.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tree_KeyDown);
 			// 
 			// Kelantir
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(584, 962);
+			this.ClientSize = new System.Drawing.Size(984, 962);
 			this.Controls.Add(this.tree);
 			this.Name = "Kelantir";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
